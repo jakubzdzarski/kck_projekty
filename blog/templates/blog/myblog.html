@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+{% block content %}
+<header>Author's Blog</header>
+<div>
+  <ul id="menubar">
+    <li class="menuitem"><a href="{% url 'nonsense' %}">Nonsense</a></li>
+    <li class="menuitem"><a href="{% url 'mumble' %}">Mumble</a></li>
+    <li class="menuitem"><a href="{% url 'gibberish' %}">Gibberish</a></li>
+  </ul>
+</div>
+<div class="row4">
+{% for post in posts %}
+    <div class="post">
+        <p>published: {{ post.published_date }}</p>
+        <h5>{{ post.title }}</h5>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+</div>
+{% endblock content %}

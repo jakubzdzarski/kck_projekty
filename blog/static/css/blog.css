@@ -1,0 +1,115 @@
+/* cba hosting wrzucił mi reklame w środek menu, a także na link w połowie strony... */
+html {margin: 0;
+	padding: 2% 5% 5% 5%;
+  background-image: url("https://storage.googleapis.com/ctrlv-www/wp-uploads/2016/05/CtrlV1a.jpg");
+  border-style: hidden;}
+
+header {margin: 0%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  height: 8%;
+	width: 100%;
+  background-image: url("https://img.youtube.com/vi/SjugsyOKNvg/mqdefault.jpg");
+  background-color: white;
+  border-bottom: ridge 5px purple;
+  font: italic bold 3em georgia, serif;
+  font-variant: small-caps;
+  color: purple;
+  text-align: center;
+	display: inline-block}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font: normal 1em georgia, serif;
+  text-align: left;
+  outline: ridge 5px purple;}
+footer {margin-top: 0;
+  padding: 0;
+  width: 90%;
+  background-color: lightblue;
+  font: italic normal 1em georgia, serif;
+  text-align: center;
+  border-top: ridge 5px purple;
+  position: absolute;
+	display: none;}
+/* nie wiem czemu takie position, ale w każdym innym rozwiązaniu footer mi fruwał */
+
+h1, h2 {margin: 0;
+  width: 100%;
+	color: orangered;
+  font: normal 1.5em georgia, serif;
+  text-align: center;}
+h3 {width: 100%;
+	color: orangered;
+	font: normal 1.5em georgia, serif;
+  text-align: center;}
+h4 {width: 100%;
+	color: orangered;
+	font: normal 1em georgia, serif;
+	padding-left: 0%;
+  text-align: left;}
+h5 {margin: 0;
+	color: orangered;
+	font: italic 1.5em georgia, serif;}
+
+img {height: 30%;
+  width: 30%;
+  opacity: 0.5;
+  margin: 1.6%;
+  float: left;
+	display: grid;}
+img:hover {opacity: 1.0;}
+a {color: orangered;;
+  text-decoration: none;
+  background-color: lightblue;}
+
+.menuitem {float: left;
+  padding: 1%;}
+.menuitem a {display: inline-block;
+  color: orangered;
+  text-align: center;
+  text-decoration: none;}
+.row1 {clear: both;}
+.row2 {clear: both;
+	padding: 2%;}
+.row3 {clear: both;}
+.row4 {padding: 2%;}
+.column {float: left;
+  width: 45%;
+  padding: 2%;}
+.post-form textarea, .post-form input {
+	width: 100%;
+	}
+.post {margin-bottom: 2.5%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;}
+
+#quiz {width: 88%;
+	margin: 2%;
+	display: inline-block;
+	float: left;
+	overflow: auto;}
+#menubar {margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightblue;
+  list-style-type: none;
+  border-bottom: ridge 5px purple;}
+#textimg {height: 25%;
+  width: 17%;
+  float: right;
+  opacity: 1.0;
+  border: ridge 5px purple;
+  margin: 1px 5px 0px 5px;
+  overflow: auto;
+	display: flex;}
+/* bez overflow obrazek też nie chciał się zachowywać */
+#film {margin-bottom: 2.5%;
+	width: 90%;
+	margin-left: 10%;
+	overflow: auto;}
+/* nie wiem czemu taki display rozwiązał problem */
+#galeria1, #para1, #para2, #para3 {text-align: justify;}
+#para2 {border-left: solid 5px purple;
+  margin-bottom: 2%}

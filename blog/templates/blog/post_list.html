@@ -1,0 +1,54 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<header>Virtual Reality</header>
+<ul id="menubar">
+  <li class="menuitem"><a href="{% url 'nonsense' %}">Nonsense</a></li>
+  <li class="menuitem"><a href="{% url 'mumble' %}">Mumble</a></li>
+  <li class="menuitem"><a href="{% url 'gibberish' %}">Gibberish</a></li>
+</ul>
+<div class="row1">
+  <div class="column" id="para1">
+    <h1>What is VR?</h1>
+    <p>Virtual reality (VR) is an interactive computer-generated experience taking place within a simulated environment, that incorporates mainly auditory and visual, but also other types of sensory feedback like haptic. This immersive environment can be similar to the real world or it can be fantastical, creating an experience that is not possible in ordinary physical reality. Augmented reality systems may also be considered a form of VR that layers virtual information over a live camera feed into a headset or through a smartphone or tablet device giving the user the ability to view three-dimensional images. </p>
+    <p>(source: Wikipedia)</p>
+  </div>
+  <div class="column" id="para2">
+    <h2>Some applications of VR:</h2>
+    <ol>
+      <li>Scientific Visualisation</li>
+      <ul><li>Virtual reality is being increasingly used in the field of scientific visualisation. This field is based upon using computer graphics to express complex ideas and scientific concepts, for example molecular models or statistical results.</li></ul>
+      <li>Healthcare</li>
+      <ul><li> Healthcare is one of the biggest adopters of virtual reality which encompasses surgery simulation, phobia treatment, robotic surgery and skills training. One of the advantages of this technology is that it allows healthcare professionals to learn new skills as well as refreshing existing ones in a safe environment. Plus it allows this without causing any danger to the patients.</li></ul>
+      <li>Entertainment</li>
+      <ul><li>The entertainment industry is one of the most enthusiastic advocates of virtual reality, most noticeably in games and virtual worlds.</li></ul>
+    </ol>
+    <p>(source: www.vrs.org.uk)</p>
+  </div>
+</div>
+<div class="row2" id="para3">
+  <p><img id="textimg" src="https://pbs.twimg.com/media/B-71STyWwAA2ptv.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor, est in hendrerit facilisis, quam lectus efficitur purus, at eleifend sem tortor id metus. Vivamus eu erat non lectus faucibus laoreet. Ut sagittis nisi tristique, tristique ligula id, viverra mi. Aenean suscipit sem leo, semper pretium sapien rutrum eu. In hac habitasse platea dictumst. Aenean aliquet, eros vitae finibus semper, ligula nulla tempus nisi, at dignissim erat erat in velit. Ut justo dui, venenatis vitae tortor id, maximus euismod elit. Integer tortor ex, viverra vitae purus sit amet, commodo venenatis justo. Curabitur feugiat enim lectus, a vulputate quam rutrum nec. Nullam sit amet quam rhoncus, consequat orci vitae, iaculis ex. Praesent ullamcorper elit eu tortor molestie, at vulputate mauris molestie. Cras consectetur, tortor sed elementum volutpat, ipsum lacus porta urna, quis scelerisque felis ante sed diam. Integer elementum tempor dolor, quis pulvinar lacus congue et. Nunc elementum sagittis luctus. Etiam a lacus odio. Proin venenatis felis id placerat tincidunt. Vestibulum laoreet quam vitae pretium semper. Ut vestibulum vehicula nulla, malesuada tempus libero malesuada sit amet. Fusce volutpat facilisis sem eget sagittis. Nullam imperdiet leo in nulla malesuada, id suscipit velit blandit. Donec ipsum purus, dictum a ante nec, bibendum pharetra neque. Etiam congue facilisis enim eget malesuada. Praesent ut quam lacus. Vestibulum eu consequat turpis, sed facilisis nisl. Pellentesque venenatis tristique arcu, et pretium nulla consequat sit amet. Sed gravida faucibus tellus, in condimentum orci aliquam eu. Duis elementum ex ut velit tempor, id semper augue porta. Duis mi diam, sodales ac augue in, accumsan venenatis urna. Donec viverra vel nisl vel efficitur. Aliquam erat volutpat. Vivamus sed elit ipsum. Pellentesque lacinia varius est in finibus. Phasellus a mollis eros. Maecenas cursus tincidunt sapien. Quisque sit amet nisl nec massa efficitur gravida. Phasellus ac turpis sed lectus porta ultricies. Sed nulla sem, vulputate in ultricies id, elementum eget metus. Cras euismod arcu ut tristique lacinia. Donec pellentesque pretium dui. Nunc eu lectus ipsum. Duis dapibus lectus volutpat eros interdum fermentum. Nullam eleifend ex ac velit porttitor blandit.
+  </p>
+  <a href="https://youtu.be/8a4De5o5Tx4?list=WL">Dangers of VR use? (video link)</a>
+</div>
+<div class="row3" id="galeria1">
+  <h3>AR or VR?</h3>
+    <img id="fota1" src="https://www.golem.de/1412/111213-92032-i_rc.jpg" alt="spvr" title="VR action 1">
+    <img id="fota2" src="https://s3.amazonaws.com/tn-imagenes/je30-1026300-437x250.jpg" alt="spvs" title="VR action 2">
+    <img id="fota3" src="https://i.ytimg.com/vi/z55rJznqF3E/maxresdefault.jpg" alt="spvu" title="VR action 3">
+</div>
+<div class="row4" id="quiz">
+  <h4>Try and guess the names of pop-culture characters photographed above:</h4>
+  <input id="wpis" type="text">
+  <button onclick="quizzewn()">Make a guess</button>
+  <button onclick="quizquit()">Show me the answers</button>
+  <p id="sprawdzenie">
+  </p>
+  <p id="sprawdzenie2">
+  </p>
+</div>
+<br>
+<div id="film">
+
+</div>
+{% endblock %}

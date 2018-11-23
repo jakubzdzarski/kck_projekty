@@ -1,0 +1,50 @@
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+  <title>UX in VR</title>
+  <script type="application/javascript">
+    var zgadniente = [];
+    function quizwewn(zgadniete) {
+      var poprawne = ["Butters", "Dunkey", "Johnny English"];
+      var wpisane = document.getElementById("wpis").value;
+      var pomoc1 = poprawne.includes(wpisane);
+      var pomoc2 = zgadniente.includes(wpisane);
+      if (pomoc1 == true) {
+        if (pomoc2 == false) {
+          document.getElementById("sprawdzenie").innerHTML = "Correct, saving your answer...";
+          zgadniente.push(wpisane);
+        } else {
+          document.getElementById("sprawdzenie").innerHTML = "Correct, but you got that one already...";
+        }
+      } else {
+        document.getElementById("sprawdzenie").innerHTML = "Wrong!";
+      }
+    }
+    function quizzewn() {
+      quizwewn();
+      if (zgadniente.length == 3) {
+        document.getElementById("quiz").innerHTML = "You guessed them all, congrats.";
+        setTimeout(quizdone, 2500);
+      }
+    }
+    function quizdone() {
+      var pomoc3;
+      var pomoc4;
+      pomoc3 = window.confirm("Press 'OK' if you liked the quiz,\nPress 'Cancel' if you didn't...");
+      if (pomoc3 == true || pomoc3 == false) {
+        document.write('<header>IT DOESN\'T MATTER IF YOU LIKED THE QUIZ, JABRONI</header>','<body><video width="900" height="500" autoplay><source src="{% static 'video/itmatters.mp4' %}" type="video/mp4"></video></body>')
+      }
+    }
+    function quizquit() {
+      var poprawne = ["Butters", "Dunkey", "Johnny English"];
+      document.getElementById("sprawdzenie").innerHTML = "Poprawne odpowiedzi to: "+poprawne;
+    }
+  </script>
+</head>
+<body>
+{% block content %}
+{% endblock %}
+</body>
+</html>
